@@ -9,6 +9,8 @@ import android.media.AudioManager;
 
 public class MainActivity extends Activity {
 
+    private static final String TAG = "MainActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +19,7 @@ public class MainActivity extends Activity {
         // Sets ringer to silent mode
         AudioManager am = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
         am.setRingerMode(AudioManager.RINGER_MODE_SILENT);
+        Log.i(TAG,"Silent mode");
     }
 
 
