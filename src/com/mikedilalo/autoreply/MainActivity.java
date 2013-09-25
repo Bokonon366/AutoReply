@@ -2,6 +2,7 @@ package com.mikedilalo.autoreply;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 import android.content.Context;
 import android.media.AudioManager;
