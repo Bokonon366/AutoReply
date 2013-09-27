@@ -4,5 +4,7 @@
     <string name="app_name">AutoReply</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="off">AutoReply Disabled</string>
+    <string name="on">AutoReply Enabled</string>
 
 </resources>

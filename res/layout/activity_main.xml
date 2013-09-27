@@ -8,4 +8,26 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    <ToggleButton
+        android:id="@+id/MainToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="74dp"
+        android:layout_marginTop="17dp"
+        android:textOff="@string/off"
+        android:textOn="@string/on"
+        android:onClick="onMainToggleClicked" />
+
+    <ListView
+        android:id="@+id/senderList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" >
+    </ListView>
+
 </RelativeLayout>
