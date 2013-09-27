@@ -26,13 +26,7 @@
             </intent-filter>
         </activity>
         
-        <service android:name=".SMSMonitorService" />
-        
-        <receiver android:name=".SMSReceiver" >
-            <intent-filter>
-                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-            </intent-filter>
-        </receiver>
+        <service android:name="com.mikedilalo.autoreply.SMSMonitorService"/>
         
     </application>
 

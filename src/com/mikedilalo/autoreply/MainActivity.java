@@ -3,12 +3,13 @@ package com.mikedilalo.autoreply;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.content.Context;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.widget.ToggleButton;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 
 public class MainActivity extends Activity {
@@ -17,7 +18,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-	    
+    	
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
@@ -46,14 +47,6 @@ public class MainActivity extends Activity {
     		stopService(SMSMonitorIntent);
     		Log.i(TAG,"SMSMonitor Stopped");
     	}
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
     }
     
 }

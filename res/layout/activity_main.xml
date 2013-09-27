@@ -17,17 +17,90 @@
         android:layout_centerHorizontal="true"
         android:layout_marginRight="74dp"
         android:layout_marginTop="17dp"
+        android:onClick="onMainToggleClicked"
         android:textOff="@string/off"
-        android:textOn="@string/on"
-        android:onClick="onMainToggleClicked" />
+        android:textOn="@string/on" />
 
-    <ListView
-        android:id="@+id/senderList"
-        android:layout_width="match_parent"
+    <Spinner
+        android:id="@+id/responses"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toggleButton1"
+        android:layout_below="@+id/MainToggleButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp" >
-    </ListView>
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/addResponse"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="130px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/responses"
+        android:layout_below="@+id/responses"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/modifyResponse"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="130px"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/responses"
+        android:layout_alignTop="@+id/addResponse"
+        android:text="Modify" />
+
+    <Button
+        android:id="@+id/deleteResponse"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="130px"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/modifyResponse"
+        android:layout_centerHorizontal="true"
+        android:text="Delete" />
+
+    <CheckBox
+        android:id="@+id/respondToAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deleteResponse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="AutoReply to all senders" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addResponse"
+        android:layout_below="@+id/respondToAll"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:id="@+id/Button03"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="130px"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/deleteResponse"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="14dp"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/Button02"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="130px"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button03"
+        android:layout_alignBottom="@+id/Button03"
+        android:layout_alignLeft="@+id/spinner1"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/Button01"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="130px"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button03"
+        android:layout_alignBottom="@+id/Button03"
+        android:layout_alignRight="@+id/spinner1"
+        android:text="Modify" />
 
 </RelativeLayout>
